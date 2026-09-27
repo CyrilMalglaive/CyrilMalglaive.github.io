@@ -12,7 +12,7 @@
 <lastmod>2026-09-25</lastmod>
 </url>
    <url> <loc>https://cyrilmalglaive.github.io/recherches/</loc>
-    <lastmod>2026-09-06</lastmod>
+   <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://cyrilmalglaive.github.io/programmes/</loc>
@@ -20,7 +20,10 @@
   </url>
   <url>
     <loc>https://cyrilmalglaive.github.io/publications/</loc>
-    <lastmod>2026-09-06</lastmod>
+  <lastmod>2026-09-27</lastmod>
   </url>
 
-</urlset>
+<url>
+  <loc>https://cyrilmalglaive.github.io/recherches/trajectoires-transformationnelles/</loc>
+  <lastmod>2026-09-27</lastmod>
+</url></urlset>
