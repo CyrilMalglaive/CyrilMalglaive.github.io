@@ -30,14 +30,17 @@
     html{scroll-behavior:smooth}
     body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65}
     a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px}
-    .topbar{background:#fff;border-bottom:1px solid var(--line)}
-    .nav{max-width:var(--max);margin:auto;padding:18px 28px;display:flex;align-items:center;gap:28px}
-    .brand{font-weight:800;letter-spacing:.12em;color:var(--navy);text-decoration:none}
-    .navlinks{margin-left:auto;display:flex;gap:22px;flex-wrap:wrap}
-    .navlinks a{color:#334155;text-decoration:none;font-size:.95rem}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.96);border-bottom:1px solid rgba(21,33,50,.1);backdrop-filter:blur(14px)}
+    .nav{max-width:var(--max);min-height:78px;margin:auto;padding:0 28px;display:flex;align-items:center;gap:28px}
+    .brand{display:inline-flex;align-items:center;gap:.75rem;font-weight:850;letter-spacing:.14em;color:var(--ink);text-decoration:none}
+    .brand-mark{display:grid;width:40px;height:40px;place-items:center;color:#fff;background:var(--ink);border-radius:50% 50% 50% 12%;font-family:Georgia,serif;font-size:1.15rem;letter-spacing:0}
+    .navlinks{margin-left:auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+    .navlinks a{color:#334155;text-decoration:none;font-size:.92rem;font-weight:700}
+    .navlinks a:hover,.navlinks a[aria-current="page"]{color:var(--teal)}
     .menu-button{display:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:.55rem .9rem;font:inherit;font-weight:750;color:var(--ink)}
     main{max-width:var(--max);margin:auto;padding:0 28px 90px}
-    .hero{padding:82px 0 58px;display:grid;grid-template-columns:minmax(0,1.85fr) minmax(270px,.65fr);gap:48px;align-items:end}\n    .hero>div,.hero>.meta{min-width:0}
+    .hero{padding:82px 0 58px;display:grid;grid-template-columns:minmax(0,1.85fr) minmax(270px,.65fr);gap:48px;align-items:end}
+    .hero>div,.hero>.meta{min-width:0}
     .eyebrow{font-size:.82rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
     h1{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:clamp(3rem,5vw,5.1rem);line-height:.96;letter-spacing:-.035em;margin:0 0 28px;max-width:100%}
     .lead{font-size:1.28rem;line-height:1.55;max-width:760px;margin:0;color:#35445a}
@@ -68,8 +71,9 @@
     .sourcebox p{margin:.4rem 0}
     .doi{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--navy);font-weight:700;word-break:break-all}
     .warning{background:#fff7ed;border-left:4px solid #c66a1b;padding:20px 22px;margin-top:26px;color:#5d3b1d}
-    footer{border-top:1px solid var(--line);background:#fff}
-    .footer-inner{max-width:var(--max);margin:auto;padding:32px 28px 46px;color:#667085;font-size:.92rem;display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
+    footer{background:#06131f;color:rgba(255,255,255,.72)}
+    .footer-inner{max-width:var(--max);margin:auto;padding:48px 28px;color:rgba(255,255,255,.72);font-size:.92rem;display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
+    .footer-inner strong{color:#fff}
     @media(max-width:980px){
       .hero{grid-template-columns:1fr;gap:24px;padding-top:56px}
       .grid-3,.evidence{grid-template-columns:1fr}
@@ -141,7 +145,7 @@
 <body>
   <header class="topbar">
     <nav class="nav" aria-label="Navigation principale">
-      <a class="brand" href="/">CIRITS</a>
+      <a class="brand" href="/" aria-label="Accueil du CIRITS"><span class="brand-mark">C</span><span>CIRITS</span></a>
       <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="framework-menu">Menu</button>
       <div class="navlinks" id="framework-menu" data-menu>
         <a href="/">Accueil</a>
@@ -258,7 +262,7 @@
   <footer>
     <div class="footer-inner">
       <div><strong>CIRITS</strong><br>Centre International de Recherches et d’Innovations en Travail Social</div>
-      <div>Recherche, innovation et ingénierie en travail social · © 2026 CIRITS</div>
+      <div>Recherche, innovation et ingénierie en travail social · © <span data-year>2026</span> CIRITS</div>
     </div>
   </footer>
   <script src="../../assets/main.js"></script>
