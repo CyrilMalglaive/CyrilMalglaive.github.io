@@ -32,6 +32,9 @@
     html{scroll-behavior:smooth}
     body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65}
     a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px}
+    a:focus-visible,button:focus-visible{outline:3px solid #f2a23a;outline-offset:4px}
+    .skip-link{position:absolute;left:1rem;top:-4rem;z-index:100;padding:.7rem 1rem;background:#fff;border-radius:.5rem;color:var(--ink)}
+    .skip-link:focus{top:1rem}
     .topbar{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.96);border-bottom:1px solid rgba(21,33,50,.1);backdrop-filter:blur(14px)}
     .nav{max-width:var(--max);min-height:78px;margin:auto;padding:0 28px;display:flex;align-items:center;gap:28px}
     .brand{display:inline-flex;align-items:center;gap:.75rem;font-weight:850;letter-spacing:.14em;color:var(--ink);text-decoration:none}
@@ -148,6 +151,7 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
   <header class="topbar">
     <nav class="nav" aria-label="Navigation principale">
       <a class="brand" href="/" aria-label="Accueil du CIRITS"><span class="brand-mark">C</span><span>CIRITS</span></a>
@@ -162,7 +166,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="contenu">
     <section class="hero" style="border-top:0">
       <div>
         <div class="eyebrow">Cadre conceptuel · CIRITS</div>
