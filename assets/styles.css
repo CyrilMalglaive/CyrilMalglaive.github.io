@@ -285,6 +285,12 @@ h3 {
   gap: 1.2rem;
 }
 
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
 .card {
   position: relative;
   min-height: 250px;
@@ -454,7 +460,8 @@ h3 {
   .content-grid { grid-template-columns: 1fr; }
   .hero-grid { min-height: auto; padding: 5rem 0; gap: 2.5rem; }
   .hero-aside { max-width: 520px; }
-  .grid-3 { grid-template-columns: 1fr; }
+  .grid-3,
+  .grid-4 { grid-template-columns: 1fr; }
   .card { min-height: auto; }
   .sticky-index { position: static; }
 }
