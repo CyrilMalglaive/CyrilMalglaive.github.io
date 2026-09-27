@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://cyrilmalglaive.github.io/sitemap.xml
