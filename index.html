@@ -15,11 +15,25 @@
   <link rel="stylesheet" href="assets/styles.css">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Centre International de Recherches et d'Innovations en Travail Social",
-    "alternateName": "CIRITS",
-    "description": "Centre de recherche-action et d'innovation en travail social, protection de l'enfance et ingénierie sociale."
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://cyrilmalglaive.github.io/#website",
+        "url":"https://cyrilmalglaive.github.io/",
+        "name":"CIRITS",
+        "inLanguage":"fr",
+        "publisher":{"@id":"https://cyrilmalglaive.github.io/#organization"}
+      },
+      {
+        "@type":"Organization",
+        "@id":"https://cyrilmalglaive.github.io/#organization",
+        "name":"Centre International de Recherches et d’Innovations en Travail Social",
+        "alternateName":"CIRITS",
+        "url":"https://cyrilmalglaive.github.io/",
+        "description":"Centre de recherche-action et d’innovation en travail social, protection de l’enfance, justice des mineurs et ingénierie sociale."
+      }
+    ]
   }
   </script>
 </head>
