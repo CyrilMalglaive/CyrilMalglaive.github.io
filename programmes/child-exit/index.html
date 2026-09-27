@@ -65,6 +65,34 @@
       line-height: 1.5;
     }
 
+    .ce-page-index {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0 0 24px;
+      margin: 0 0 12px;
+      border-bottom: 1px solid #d9dee1;
+    }
+
+    .ce-page-index a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 8px 13px;
+      border: 1px solid #d9dee1;
+      border-radius: 999px;
+      background: #fff;
+      color: #314653;
+      text-decoration: none;
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    .ce-page-index a:hover {
+      border-color: #0b5969;
+      color: #0b5969;
+    }
+
     .ce-section {
       padding: 55px 0;
       border-top: 1px solid #d9dee1;
@@ -246,8 +274,19 @@
       </div>
     </section>
 
+    <div class="ce-wrap">
+      <nav class="ce-page-index" aria-label="Navigation dans CHILD-EXIT">
+        <a href="#policy-gap">Policy gap</a>
+        <a href="#pathway">Pathway</a>
+        <a href="#questions">Research questions</a>
+        <a href="#foundations">Research foundations</a>
+        <a href="#scientific-position">Position scientifique</a>
+        <a href="#dialogue">International dialogue</a>
+      </nav>
+    </div>
 
-    <section class="ce-section">
+
+    <section class="ce-section" id="policy-gap">
       <div class="ce-wrap">
 
         <p class="ce-kicker">The policy gap</p>
@@ -273,7 +312,7 @@
     </section>
 
 
-    <section class="ce-section">
+    <section class="ce-section" id="pathway">
       <div class="ce-wrap">
 
         <p class="ce-kicker">A public conceptual pathway</p>
@@ -310,7 +349,7 @@
     </section>
 
 
-    <section class="ce-section">
+    <section class="ce-section" id="questions">
       <div class="ce-wrap">
 
         <p class="ce-kicker">International dialogue</p>
@@ -351,7 +390,7 @@
     </section>
 
 
-    <section class="ce-section">
+    <section class="ce-section" id="foundations">
       <div class="ce-wrap">
 
         <p class="ce-kicker">Research foundations</p>
@@ -393,7 +432,7 @@
     </section>
 
 
-    <section class="ce-section">
+    <section class="ce-section" id="scientific-position">
       <div class="ce-wrap">
 
         <p class="ce-kicker">Position scientifique</p>
@@ -426,7 +465,7 @@
     </section>
 
 
-    <section class="ce-dialogue">
+    <section class="ce-dialogue" id="dialogue">
       <div class="ce-wrap">
 
         <p class="ce-kicker">CHILD-EXIT International Dialogue</p>
