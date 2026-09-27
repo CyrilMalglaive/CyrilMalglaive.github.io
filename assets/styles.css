@@ -437,6 +437,22 @@ h3 {
 .site-footer p { margin: .35rem 0 0; }
 .site-footer a { color: var(--white); }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,.82);
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.footer-links a:hover { color: var(--white); }
+
 @media (max-width: 900px) {
   .menu-button { display: inline-flex; }
   .site-nav {
@@ -475,6 +491,7 @@ h3 {
   .question-number { font-size: 2.5rem; }
   .feature-row { grid-template-columns: 1fr; }
   .site-footer-inner { flex-direction: column; }
+  .footer-links { align-items: flex-start; }
 }
 
 @media (prefers-reduced-motion: reduce) {
