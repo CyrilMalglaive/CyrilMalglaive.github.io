@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trajectoires transformationnelles | Cadre CIRITS</title>
+  <meta name="description" content="Définitions canoniques du cadre CIRITS des trajectoires transformationnelles : latence transformationnelle, écologie de consolidation, généralisation intercontextuelle et robustesse transformationnelle.">
+  <meta name="author" content="Cyril Malglaive">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://cyrilmalglaive.github.io/recherches/trajectoires-transformationnelles/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Trajectoires transformationnelles | Cadre CIRITS">
+  <meta property="og:description" content="Un cadre longitudinal pour étudier ce que devient un changement lorsqu’il quitte son contexte d’émergence, circule entre les contextes et rencontre des perturbations.">
+  <meta property="og:url" content="https://cyrilmalglaive.github.io/recherches/trajectoires-transformationnelles/">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root{
+      --navy:#0d3158;
+      --navy-2:#163f69;
+      --teal:#0e6f70;
+      --ink:#152132;
+      --muted:#566579;
+      --paper:#fbfaf7;
+      --white:#ffffff;
+      --line:#d9e0e6;
+      --soft:#eef4f4;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65}
+    a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px}
+    .topbar{background:#fff;border-bottom:1px solid var(--line)}
+    .nav{max-width:var(--max);margin:auto;padding:18px 28px;display:flex;align-items:center;gap:28px}
+    .brand{font-weight:800;letter-spacing:.12em;color:var(--navy);text-decoration:none}
+    .navlinks{margin-left:auto;display:flex;gap:22px;flex-wrap:wrap}
+    .navlinks a{color:#334155;text-decoration:none;font-size:.95rem}
+    main{max-width:var(--max);margin:auto;padding:0 28px 90px}
+    .hero{padding:82px 0 58px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,.7fr);gap:56px;align-items:end}
+    .eyebrow{font-size:.82rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
+    h1{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:clamp(3rem,7vw,6.5rem);line-height:.94;letter-spacing:-.035em;margin:0 0 28px}
+    .lead{font-size:1.28rem;line-height:1.55;max-width:760px;margin:0;color:#35445a}
+    .meta{border-left:3px solid var(--teal);padding-left:20px;color:var(--muted);font-size:.95rem}
+    .meta strong{color:var(--ink)}
+    .meta p{margin:.35rem 0}
+    .claim{margin:14px 0 64px;padding:28px 30px;border:1px solid var(--line);border-radius:16px;background:var(--white);font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;line-height:1.45;color:var(--navy)}
+    section{padding:54px 0;border-top:1px solid var(--line)}
+    .section-kicker{font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+    h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.08;color:var(--navy);margin:0 0 22px}
+    h3{font-size:1.13rem;color:var(--navy);margin:0 0 10px}
+    .intro{max-width:850px;font-size:1.08rem;color:#3e4b5d}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 24px}
+    .card .term{display:block;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+    .card p{margin:.5rem 0;color:#3c4a5b}
+    .definition{font-size:1.02rem}
+    .not{margin-top:18px;padding-top:16px;border-top:1px solid #e4eaee;font-size:.94rem;color:#536273}
+    .not strong{color:#223246}
+    .flow{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap;margin-top:32px}
+    .flow span{flex:1 1 150px;background:var(--soft);border:1px solid #cfe0df;border-radius:999px;padding:12px 16px;text-align:center;font-weight:700;color:#214a4c}
+    .axes{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:30px}
+    .axis{background:var(--navy);color:#fff;border-radius:12px;padding:20px 16px;min-height:150px}
+    .axis b{display:block;font-size:1.25rem;margin-bottom:8px}
+    .axis small{display:block;color:#dbe7f3;line-height:1.45}
+    .evidence{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+    .sourcebox{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}
+    .sourcebox p{margin:.4rem 0}
+    .doi{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--navy);font-weight:700;word-break:break-all}
+    .warning{background:#fff7ed;border-left:4px solid #c66a1b;padding:20px 22px;margin-top:26px;color:#5d3b1d}
+    footer{border-top:1px solid var(--line);background:#fff}
+    .footer-inner{max-width:var(--max);margin:auto;padding:32px 28px 46px;color:#667085;font-size:.92rem;display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;gap:24px;padding-top:56px}.grid-3,.evidence{grid-template-columns:1fr}.axes{grid-template-columns:1fr 1fr}.navlinks{display:none}}
+    @media(max-width:560px){main{padding-left:18px;padding-right:18px}.axes{grid-template-columns:1fr}h1{font-size:3.35rem}.claim{font-size:1.25rem}.nav{padding-left:18px;padding-right:18px}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "@id":"https://cyrilmalglaive.github.io/recherches/trajectoires-transformationnelles/#webpage",
+        "url":"https://cyrilmalglaive.github.io/recherches/trajectoires-transformationnelles/",
+        "name":"Trajectoires transformationnelles | Cadre CIRITS",
+        "description":"Définitions canoniques du cadre CIRITS des trajectoires transformationnelles.",
+        "inLanguage":"fr",
+        "isPartOf":{"@id":"https://cyrilmalglaive.github.io/#website"},
+        "about":{"@id":"https://doi.org/10.5281/zenodo.22976170"},
+        "author":{"@id":"https://orcid.org/0009-0007-4554-3817"},
+        "publisher":{"@id":"https://cyrilmalglaive.github.io/#organization"}
+      },
+      {
+        "@type":"ScholarlyArticle",
+        "@id":"https://doi.org/10.5281/zenodo.22976170",
+        "headline":"Après le séjour : que devient la transformation ?",
+        "alternativeHeadline":"Vers un cadre CIRITS des trajectoires transformationnelles",
+        "datePublished":"2026-09-26",
+        "inLanguage":"fr",
+        "identifier":"https://doi.org/10.5281/zenodo.22976170",
+        "sameAs":"https://doi.org/10.5281/zenodo.22976170",
+        "author":{"@id":"https://orcid.org/0009-0007-4554-3817"},
+        "publisher":{"@id":"https://cyrilmalglaive.github.io/#organization"},
+        "keywords":["trajectoires transformationnelles","latence transformationnelle","écologie de consolidation","généralisation intercontextuelle","robustesse transformationnelle","recherche longitudinale"]
+      },
+      {
+        "@type":"Person",
+        "@id":"https://orcid.org/0009-0007-4554-3817",
+        "name":"Cyril Malglaive",
+        "url":"https://cyrilmalglaive.github.io/cyril-malglaive/",
+        "sameAs":["https://orcid.org/0009-0007-4554-3817"]
+      },
+      {
+        "@type":"Organization",
+        "@id":"https://cyrilmalglaive.github.io/#organization",
+        "name":"Centre International de Recherches et d’Innovations en Travail Social (CIRITS)",
+        "url":"https://cyrilmalglaive.github.io/"
+      },
+      {
+        "@type":"DefinedTermSet",
+        "@id":"https://cyrilmalglaive.github.io/recherches/trajectoires-transformationnelles/#definitions",
+        "name":"Cadre CIRITS des trajectoires transformationnelles",
+        "hasDefinedTerm":[
+          {"@type":"DefinedTerm","name":"Latence transformationnelle","termCode":"LT","description":"Configuration longitudinale dans laquelle un changement antérieurement documenté devient temporairement faiblement observable ou non mobilisable, puis réapparaît ultérieurement sous une forme suffisamment comparable pour qu’une continuité empirique puisse être examinée."},
+          {"@type":"DefinedTerm","name":"Écologie de consolidation","termCode":"EC","description":"Configuration évolutive des ressources, relations, activités, institutions, lieux, opportunités et supports symboliques qui, après l’émergence d’un changement, permettent ou empêchent son exercice, sa reconnaissance, sa généralisation et sa réactivation dans la vie ordinaire."},
+          {"@type":"DefinedTerm","name":"Robustesse transformationnelle","termCode":"RT","description":"Propriété longitudinale d’un changement antérieurement documenté décrivant ce qu’il devient lorsqu’il est exposé à une perturbation significative : maintien, déstabilisation, récupération, réorganisation, réactivation ou érosion."}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand" href="/">CIRITS</a>
+      <div class="navlinks">
+        <a href="/">Accueil</a>
+        <a href="/cyril-malglaive/">Cyril Malglaive</a>
+        <a href="/recherches/">Recherches</a>
+        <a href="/programmes/">Programmes</a>
+        <a href="/publications/">Publications</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="border-top:0">
+      <div>
+        <div class="eyebrow">Cadre conceptuel · CIRITS</div>
+        <h1>Trajectoires transformationnelles</h1>
+        <p class="lead">Un cadre longitudinal pour étudier ce que devient un changement lorsqu’il quitte son contexte d’émergence, circule entre des contextes et rencontre des perturbations.</p>
+      </div>
+      <aside class="meta" aria-label="Métadonnées scientifiques">
+        <p><strong>Auteur</strong><br>Cyril Malglaive</p>
+        <p><strong>Institution</strong><br>CIRITS</p>
+        <p><strong>Publication de référence</strong><br>Note CIRITS n°03 · V3 scientifique</p>
+        <p><strong>DOI</strong><br><a href="https://doi.org/10.5281/zenodo.22976170">10.5281/zenodo.22976170</a></p>
+        <p><strong>ORCID</strong><br><a href="https://orcid.org/0009-0007-4554-3817">0009-0007-4554-3817</a></p>
+      </aside>
+    </section>
+
+    <div class="claim">« Une transformation ne doit pas être jugée seulement à partir de son amplitude ou de sa durée, mais à partir de ce qu’elle devient lorsqu’elle quitte son contexte d’émergence, circule entre des contextes et rencontre des perturbations. »</div>
+
+    <section id="positionnement">
+      <div class="section-kicker">Positionnement scientifique</div>
+      <h2>Déplacer l’unité d’analyse : du changement à sa trajectoire.</h2>
+      <p class="intro">Le cadre CIRITS ne présente ni la maintenance, ni la généralisation, ni la résilience, ni les trajectoires de changement comme des découvertes propres. Sa contribution proposée consiste à articuler ces phénomènes dans un cadre longitudinal commun centré sur le devenir d’un changement psychosocial documenté après une intervention ou une expérience intensive.</p>
+      <div class="warning"><strong>Statut.</strong> Ce cadre est une proposition conceptuelle et méthodologique destinée à être comparée à la littérature internationale, opérationnalisée et éprouvée empiriquement. Il ne constitue pas un modèle causal validé ni un instrument prédictif.</div>
+    </section>
+
+    <section id="definitions">
+      <div class="section-kicker">Définitions canoniques</div>
+      <h2>Trois concepts à ne pas confondre avec leurs voisins.</h2>
+      <div class="grid-3">
+        <article class="card" id="latence-transformationnelle">
+          <span class="term">LT · Forme de trajectoire</span>
+          <h3>Latence transformationnelle</h3>
+          <p class="definition">Configuration longitudinale dans laquelle un changement antérieurement documenté devient temporairement faiblement observable ou non mobilisable, puis réapparaît ultérieurement sous une forme suffisamment comparable pour qu’une continuité empirique puisse être examinée.</p>
+          <p class="not"><strong>À distinguer de :</strong> l’effet différé. La séquence attendue est <strong>C<sub>A</sub> documenté → ↓/Ø → C<sub>B</sub> réapparu</strong>. Sans réapparition documentée, la latence n’est pas établie.</p>
+        </article>
+        <article class="card" id="ecologie-consolidation">
+          <span class="term">EC · Condition contextuelle</span>
+          <h3>Écologie de consolidation</h3>
+          <p class="definition">Configuration évolutive des ressources, relations, activités, institutions, lieux, opportunités et supports symboliques qui, après l’émergence d’un changement, permettent ou empêchent son exercice, sa reconnaissance, sa généralisation et sa réactivation dans la vie ordinaire.</p>
+          <p class="not"><strong>À distinguer de :</strong> un simple « environnement protecteur ». L’écologie de consolidation peut être soutenante, insuffisante, contradictoire ou hostile.</p>
+        </article>
+        <article class="card" id="robustesse-transformationnelle">
+          <span class="term">RT · Propriété du changement</span>
+          <h3>Robustesse transformationnelle</h3>
+          <p class="definition">Propriété longitudinale d’un changement antérieurement documenté décrivant ce qu’il devient lorsqu’il est exposé à une perturbation significative : maintien, déstabilisation, récupération, réorganisation, réactivation ou érosion.</p>
+          <p class="not"><strong>À distinguer de :</strong> la « résilience du jeune ». L’unité d’analyse est le <strong>changement documenté</strong>, non une qualité globale attribuée à la personne.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <div class="section-kicker">Architecture longitudinale</div>
+      <h2>Suivre ce qui arrive au changement.</h2>
+      <p class="intro">Le cadre décrit une chaîne d’observation plutôt qu’un parcours nécessaire ou linéaire. Chaque élément peut être absent, contradictoire ou évoluer au cours du suivi.</p>
+      <div class="flow" aria-label="Chaîne conceptuelle">
+        <span>Émergence C</span><span>Retour</span><span>Écologie de consolidation</span><span>Généralisation / érosion</span><span>Perturbation P</span><span>Robustesse</span><span>Latence éventuelle</span><span>Réactivation</span>
+      </div>
+    </section>
+
+    <section id="axes">
+      <div class="section-kicker">Profil de trajectoire</div>
+      <h2>Cinq axes descriptifs, sans score global.</h2>
+      <p class="intro">Les axes ne sont pas additionnés mécaniquement. Ils décrivent des propriétés différentes d’une trajectoire et permettent de comparer des configurations dans le temps.</p>
+      <div class="axes">
+        <div class="axis"><b>Intensité</b><small>Amplitude du changement observé ou décrit.</small></div>
+        <div class="axis"><b>Diversité</b><small>Nombre et variété des domaines dans lesquels le changement apparaît.</small></div>
+        <div class="axis"><b>Persistance</b><small>Durée pendant laquelle le changement reste observable ou mobilisable.</small></div>
+        <div class="axis"><b>Généralisation intercontextuelle</b><small>Possibilité de mobiliser le changement dans plusieurs contextes de vie.</small></div>
+        <div class="axis"><b>Robustesse</b><small>Devenir du changement lorsqu’une perturbation significative survient.</small></div>
+      </div>
+    </section>
+
+    <section id="precision">
+      <div class="section-kicker">Précisions conceptuelles</div>
+      <h2>Ce que le cadre ne dit pas.</h2>
+      <div class="grid-3">
+        <div class="card"><h3>Transformation ≠ amélioration</h3><p>Une trajectoire peut avoir une valence favorable, défavorable, ambivalente ou indéterminée. La valence doit être analysée séparément de la persistance ou de la robustesse.</p></div>
+        <div class="card"><h3>Latence ≠ effet caché</h3><p>L’absence d’observation ne constitue jamais une preuve de latence. La catégorie ne devient examinable qu’après une réapparition documentée.</p></div>
+        <div class="card"><h3>Cadre ≠ prédiction</h3><p>Le dispositif vise d’abord à décrire et comparer des trajectoires. Des capacités prédictives ne pourraient être discutées qu’après accumulation de données longitudinales.</p></div>
+      </div>
+    </section>
+
+    <section id="source">
+      <div class="section-kicker">Source primaire</div>
+      <h2>Note CIRITS n°03 — V3 scientifique</h2>
+      <div class="evidence">
+        <div class="sourcebox">
+          <p><strong>Après le séjour : que devient la transformation ?</strong></p>
+          <p>Vers un cadre CIRITS des trajectoires transformationnelles.</p>
+          <p>Cyril Malglaive · CIRITS · 26 septembre 2026</p>
+          <p class="doi">10.5281/zenodo.22976170</p>
+          <p><a href="https://doi.org/10.5281/zenodo.22976170">Consulter la publication sur Zenodo</a></p>
+        </div>
+        <div class="sourcebox">
+          <p><strong>Citation recommandée</strong></p>
+          <p>Malglaive, C. (2026). <em>Après le séjour : que devient la transformation ? Vers un cadre CIRITS des trajectoires transformationnelles.</em> Les Notes du CIRITS, n°03. Centre International de Recherches et d’Innovations en Travail Social.</p>
+          <p><a href="https://orcid.org/0009-0007-4554-3817">ORCID de Cyril Malglaive</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div><strong>CIRITS</strong><br>Centre International de Recherches et d’Innovations en Travail Social</div>
+      <div>Recherche, innovation et ingénierie en travail social · © 2026 CIRITS</div>
+    </div>
+  </footer>
+</body>
+</html>
