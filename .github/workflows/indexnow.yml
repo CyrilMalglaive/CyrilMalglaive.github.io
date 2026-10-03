@@ -25,7 +25,7 @@ jobs:
           curl --fail-with-body --retry 3 --retry-delay 10 \
             -H "Content-Type: application/json; charset=utf-8" \
             -d '{
-              "host": "cyrilmalglaive.github.io",
+              "host": "cirits.fr",
               "key": "c6a7f9e14b2d43c58a1e9076d35f24bc",
               "keyLocation": "https://cirits.fr/c6a7f9e14b2d43c58a1e9076d35f24bc.txt",
               "urlList": [
