@@ -27,14 +27,14 @@ jobs:
             -d '{
               "host": "cyrilmalglaive.github.io",
               "key": "c6a7f9e14b2d43c58a1e9076d35f24bc",
-              "keyLocation": "https://cyrilmalglaive.github.io/c6a7f9e14b2d43c58a1e9076d35f24bc.txt",
+              "keyLocation": "https://cirits.fr/c6a7f9e14b2d43c58a1e9076d35f24bc.txt",
               "urlList": [
-                "https://cyrilmalglaive.github.io/",
-                "https://cyrilmalglaive.github.io/cyril-malglaive/",
-                "https://cyrilmalglaive.github.io/recherches/",
-                "https://cyrilmalglaive.github.io/recherches/no-exit/",
-                "https://cyrilmalglaive.github.io/programmes/child-exit/",
-                "https://cyrilmalglaive.github.io/publications/"
+                "https://cirits.fr/",
+                "https://cirits.fr/cyril-malglaive/",
+                "https://cirits.fr/recherches/",
+                "https://cirits.fr/recherches/no-exit/",
+                "https://cirits.fr/programmes/child-exit/",
+                "https://cirits.fr/publications/"
               ]
             }' \
             https://api.indexnow.org/indexnow
