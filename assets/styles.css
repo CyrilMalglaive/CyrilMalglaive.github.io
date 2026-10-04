@@ -497,3 +497,32 @@ h3 {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+
+.site-feature-image {
+  width: min(var(--max), calc(100% - 2rem));
+  margin: -2rem auto 4.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.site-feature-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.site-feature-image--child {
+  width: 100%;
+  margin: 2.25rem 0 2.75rem;
+}
+
+.site-feature-image--child img {
+  border-radius: 1rem;
+}
+
+@media (max-width: 900px) {
+  .site-feature-image { margin-top: -1rem; margin-bottom: 3rem; }
+}
