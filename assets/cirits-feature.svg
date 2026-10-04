@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">CIRITS — Recherches et innovations en travail social</title>
+<desc id="desc">Identité visuelle du CIRITS</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f7f5f0"/>
+    <stop offset="1" stop-color="#e9f1f3"/>
+  </linearGradient>
+  <linearGradient id="sea" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#0c2033"/>
+    <stop offset="1" stop-color="#176a78"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="630" rx="32" fill="url(#bg)"/>
+<circle cx="1040" cy="120" r="230" fill="#dceef0" opacity=".78"/>
+<circle cx="1110" cy="560" r="290" fill="#fff0d6" opacity=".92"/>
+<path d="M0 535 C220 470 360 590 570 520 C790 447 948 488 1200 390 L1200 630 L0 630 Z" fill="url(#sea)" opacity=".96"/>
+<g transform="translate(72 70)">
+  <path d="M0 0h58c43 0 77 34 77 77s-34 77-77 77H0z" fill="#0c2033"/>
+  <circle cx="59" cy="77" r="46" fill="#f7f5f0"/>
+  <circle cx="81" cy="77" r="39" fill="#dceef0"/>
+  <text x="160" y="86" font-family="Arial,Helvetica,sans-serif" font-size="74" font-weight="800" letter-spacing="7" fill="#0c2033">CIRITS</text>
+  <text x="162" y="125" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" letter-spacing="3" fill="#30465a">RECHERCHES ET INNOVATIONS</text>
+  <text x="162" y="154" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" letter-spacing="3" fill="#30465a">EN TRAVAIL SOCIAL</text>
+</g>
+<text x="72" y="315" font-family="Georgia,'Times New Roman',serif" font-size="62" font-weight="700" fill="#0c2033">
+  <tspan x="72" dy="0">Concevoir des protections</tspan>
+  <tspan x="72" dy="74">qui tiennent dans la durée.</tspan>
+</text>
+<text x="74" y="462" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" letter-spacing="2.5" fill="#176a78">RECHERCHE · INNOVATION · TRANSFORMATION</text>
+<g transform="translate(825 420)" fill="#f7f5f0">
+  <circle cx="60" cy="55" r="31"/>
+  <circle cx="145" cy="40" r="38"/>
+  <circle cx="236" cy="58" r="29"/>
+  <circle cx="320" cy="29" r="34"/>
+  <path d="M25 145c5-54 16-74 35-74s31 19 36 74z"/>
+  <path d="M98 145c7-69 21-94 47-94s42 25 49 94z"/>
+  <path d="M205 145c5-50 16-69 31-69s27 19 31 69z"/>
+  <path d="M281 145c6-62 18-85 39-85s35 23 40 85z"/>
+</g>
+</svg>
