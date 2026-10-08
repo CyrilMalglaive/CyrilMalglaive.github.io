@@ -53,12 +53,17 @@
           <article class="card"><h3>Programmes & partenariats</h3><p>CHILD-EXIT, prévention de l’exploitation, sorties durables, coopérations internationales et réponses institutionnelles.</p></article>
           <article class="card"><h3>Ingénierie & transmission</h3><p>Conception de dispositifs, appui stratégique, accompagnement des équipes, formation et transformation des pratiques.</p></article>
         </div>
-        <div class="question-panel" style="margin-top:2rem">
+        <div class="question-panel" id="ecrire" style="margin-top:2rem">
           <div class="question-number">@</div>
           <div>
             <h2>contact@cirits.fr</h2>
             <p>Adresse institutionnelle du CIRITS. Précisez votre organisation, l’objet de votre sollicitation et, si possible, les modalités de coopération envisagées.</p>
-            <p><a class="button button-primary" href="mailto:contact@cirits.fr?subject=Contact%20CIRITS%20%E2%80%94%20Proposition%20de%20collaboration">Nous écrire par courriel</a></p>
+            <div class="actions">
+              <a class="button button-primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=contact%40cirits.fr&su=Contact%20CIRITS%20-%20Proposition%20de%20collaboration" target="_blank" rel="noopener noreferrer">Nous écrire avec Gmail</a>
+              <button class="button button-outline" type="button" data-copy-email>Copier l’adresse e-mail</button>
+            </div>
+            <p id="copy-status" role="status" aria-live="polite"></p>
+            <p>Vous utilisez une autre messagerie ? <a href="mailto:contact@cirits.fr?subject=Contact%20CIRITS">Ouvrir votre application de messagerie</a>. Si rien ne s’ouvre, copiez l’adresse ci-dessus.</p>
           </div>
         </div>
         <p style="margin-top:1.5rem">Pour protéger les personnes concernées, merci de ne pas transmettre par ce canal de données personnelles sensibles, de dossiers nominatifs ou d’informations permettant d’identifier un mineur. Un canal sécurisé pourra être convenu si nécessaire.</p>
@@ -75,10 +80,36 @@
   <footer class="site-footer">
     <div class="site-footer-inner">
       <div><strong>CIRITS</strong><p>Recherche, innovation et ingénierie en travail social.</p></div>
-      <div class="footer-links"><a href="/qui-sommes-nous/">Qui sommes-nous</a><a href="/publications/">Publications</a><a href="/contact/">Contact</a><a href="mailto:contact@cirits.fr">contact@cirits.fr</a><a href="https://orcid.org/0009-0007-4554-3817" rel="me external">ORCID</a></div>
+      <div class="footer-links"><a href="/qui-sommes-nous/">Qui sommes-nous</a><a href="/publications/">Publications</a><a href="/contact/">Contact</a><a href="#ecrire">contact@cirits.fr</a><a href="https://orcid.org/0009-0007-4554-3817" rel="me external">ORCID</a></div>
       <div><p>© <span data-year>2026</span> CIRITS</p></div>
     </div>
   </footer>
   <script src="../assets/main.js"></script>
+  <script>
+    const copyEmailButton = document.querySelector('[data-copy-email]');
+    const copyStatus = document.getElementById('copy-status');
+    copyEmailButton?.addEventListener('click', async () => {
+      const address = 'contact@cirits.fr';
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(address);
+        } else {
+          const field = document.createElement('textarea');
+          field.value = address;
+          field.setAttribute('readonly', '');
+          field.style.position = 'fixed';
+          field.style.opacity = '0';
+          document.body.appendChild(field);
+          field.select();
+          const copied = document.execCommand('copy');
+          field.remove();
+          if (!copied) throw new Error('copy unavailable');
+        }
+        copyStatus.textContent = 'Adresse copiée : contact@cirits.fr';
+      } catch (_) {
+        copyStatus.textContent = 'Sélectionnez et copiez manuellement : contact@cirits.fr';
+      }
+    });
+  </script>
 </body>
 </html>
